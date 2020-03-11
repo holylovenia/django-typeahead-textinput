@@ -10,7 +10,7 @@ class TypeaheadTextInput(TextInput):
         self.remote = remote
 
     def render(self, name, value, attrs=None):
-        output = super(TypeaheadTextInput, self).render(name=name, value=value, attrs=attrs,)
+        output = super(TypeaheadTextInput, self).render(name=name, value=value, attrs=attrs, renderer=None)
         if self.local != "":
             self.local = 'local: $.map('+self.local+', function(v) { return { value: v }; }),'
 
