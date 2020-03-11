@@ -9,7 +9,7 @@ class TypeaheadTextInput(TextInput):
         self.prefetch_ttl = prefetch_ttl
         self.remote = remote
 
-    def render(self, name, value, attrs=None):
+    def render(self, name, value, attrs=None, renderer=None):
         output = super(TypeaheadTextInput, self).render(name=name, value=value, attrs=attrs,)
         if self.local != "":
             self.local = 'local: $.map('+self.local+', function(v) { return { value: v }; }),'
