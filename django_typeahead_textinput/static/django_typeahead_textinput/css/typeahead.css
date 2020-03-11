@@ -42,7 +42,6 @@
   padding: 1px 12px;
   font-size: 14px;
   line-height: 24px;
-  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .tt-suggestion.tt-cursor {
@@ -58,8 +57,4 @@
 .tt-highlight{
     font-weight: normal;
     text-decoration: underline;
-}
-
-.tt-input {
-  width: 100vh;
 }
